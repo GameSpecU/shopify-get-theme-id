@@ -1,13 +1,18 @@
-name: 'Wait'
-description: 'Wait a designated number of milliseconds'
+name: 'Get Shopify Theme ID'
+description: 'Extract theme ID by its name using Shopify REST Admin API'
 inputs:
-  milliseconds:  # id of input
-    description: 'number of milliseconds to wait'
+  store:
+    description: 'Shopify Store URL'
     required: true
-    default: '1000'
+  token:
+    description: 'Shopify API Access Token'
+    required: true
+  theme_name:
+    description: 'Theme name'
+    required: true
 outputs:
-  time: # output will be available to future steps
-    description: 'The current time after waiting'
+  theme_id:
+    description: 'ID of the Theme'
 runs:
   using: 'node16'
   main: 'dist/index.js'
