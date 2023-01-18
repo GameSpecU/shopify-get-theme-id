@@ -28,7 +28,7 @@
   "homepage": "https://github.com/GameSpecU/shopify-get-theme-id#readme",
   "dependencies": {
     "@actions/core": "^1.10.0",
-    "axios": "^1.2.2"
+    "axios": "^1.2.3"
   },
   "devDependencies": {
     "@vercel/ncc": "^0.31.1",
